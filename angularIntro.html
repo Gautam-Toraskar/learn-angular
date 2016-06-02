@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>angular intro</title>
-	<script type="text/javascript" src="assets/packages/angularjs/js/angular.min.js"></script>
-</head>
-<body ng-app="">
-	<form>
-		<input type="text" ng-model="name">
-		<p>{{name}}</p>
-	</form>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>angular intro</title>
+    <link rel="stylesheet" href="assets/packages/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/packages/bootstrap-material-design/css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="assets/packages/bootstrap-material-design/css/ripples.min.css" />
+		<script type="text/javascript" src="assets/packages/angularjs/js/angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<div class="container">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-md-12">
+						<label for="" class="control-label">Enter you name:</label>
+						<input class="form-control" type="text" ng-model="name">
+						<p>{{name}}</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="assets/packages/jquery/js/jquery.min.js"></script>
+		<script src="assets/packages/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/packages/bootstrap-material-design/js/material.min.js"></script>
+		<script src="assets/packages/bootstrap-material-design/js/ripples.min.js"></script>
+	</body>
 </html>
