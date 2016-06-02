@@ -14,11 +14,16 @@
 	<body ng-app="">
 		<div class="container">
 			<form class="form-horizontal">
-				<div class="form-group">
+				<div class="form-group floating-labels">
 					<div class="col-md-12">
 						<label for="" class="control-label">Enter you name:</label>
 						<input class="form-control" type="text" ng-model="name">
 						<p>{{name}}</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<button class="btn btn-raised btn-warning">submit form</button>
 					</div>
 				</div>
 			</form>
@@ -28,5 +33,8 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="assets/packages/bootstrap-material-design/js/material.min.js"></script>
 		<script src="assets/packages/bootstrap-material-design/js/ripples.min.js"></script>
+		<script>
+			$.material.init();
+		</script>
 	</body>
 </html>
